@@ -1,0 +1,21 @@
+package com.TypeOfData;
+import Utility.Util1;
+import java.util.Scanner;
+
+public class Name {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the first name");
+		String name = sc.next();
+		System.out.println("Enter the second name");
+		String name1 = sc.next();
+		System.out.println("Enter the third name");
+		String name2 = sc.next();
+		Util1.name(name, name1, name2);
+		
+
+	}
+
+}

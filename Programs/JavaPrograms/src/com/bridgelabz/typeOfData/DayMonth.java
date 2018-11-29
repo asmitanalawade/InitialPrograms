@@ -1,0 +1,20 @@
+package com.bridgelabz.typeOfData;
+import utility.Util1;
+import java.util.Scanner;
+
+public class DayMonth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of day and month");
+		int d = sc.nextInt();
+		int m = sc.nextInt();
+		Util1.day(d, m);
+			
+				
+
+        
+	}
+
+}

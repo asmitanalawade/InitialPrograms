@@ -1,0 +1,18 @@
+package com.TypeOfData;
+import Utility.Util1;
+import java.util.Scanner;
+
+public class PrintInitial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 9;
+		Util1.D_pattern(n);
+		
+		
+		
+	}
+
+	
+
+}

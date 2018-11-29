@@ -1,0 +1,20 @@
+package com.TypeOfData;
+import Utility.Util1;
+import java.util.Scanner;
+
+public class DoubleOpt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of a: ");
+		double a = sc.nextDouble();
+		System.out.println("Enter the value of b: ");
+		double b = sc.nextDouble();
+		System.out.println("Enter the value of c: ");
+		Double c = sc.nextDouble();
+		Util1.Opt(a, b, c);
+
+	}
+
+}
