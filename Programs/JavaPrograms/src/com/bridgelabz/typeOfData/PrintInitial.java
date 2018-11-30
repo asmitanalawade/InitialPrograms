@@ -1,3 +1,12 @@
+
+/**
+ * Purpose : This program take row input and print the upperCase D using asterisk pattern.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   27/11/2018          
+ */
+
+
 package com.bridgelabz.typeOfData;
 import utility.Util1;
 import java.util.Scanner;

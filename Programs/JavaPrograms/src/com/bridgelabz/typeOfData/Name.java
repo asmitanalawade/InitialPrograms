@@ -1,19 +1,28 @@
+
+/**
+ * Purpose : This program take three string input from user and prints out a proper sentence 
+ *           with the names in the reverse of the order.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   27/11/2018          
+ */
+
 package com.bridgelabz.typeOfData;
+
 import utility.Util1;
-import java.util.Scanner;
 
 public class Name {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Enter the first name");
-		String name = sc.next();
+		String name = Util1.inputString();
 		System.out.println("Enter the second name");
-		String name1 = sc.next();
+		String name1 = Util1.inputString();
 		System.out.println("Enter the third name");
-		String name2 = sc.next();
-		Util1.name(name, name1, name2);
+		String name2 = Util1.inputString();
+		System.out.print(" Hi "+ name2+", "+ name1+" and " +name);
 		
 
 	}

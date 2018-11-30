@@ -1,19 +1,32 @@
+
+/**
+ * Purpose : This program take three double numbers from user and print the double operations.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   27/11/2018          
+ */
+
+
 package com.bridgelabz.typeOfData;
+
 import utility.Util1;
-import java.util.Scanner;
 
 public class DoubleOpt {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Enter the value of a: ");
-		double a = sc.nextDouble();
+		double a = Util1.n();
 		System.out.println("Enter the value of b: ");
-		double b = sc.nextDouble();
+		double b = Util1.n();
 		System.out.println("Enter the value of c: ");
-		Double c = sc.nextDouble();
-		Util1.Opt(a, b, c);
+		Double c = Util1.n();
+	    
+		    System.out.println(a+(b*c));
+			System.out.println((a*b)+c);
+			System.out.println(c+(a/b));
+			System.out.println((a%b)+c);
 
 	}
 

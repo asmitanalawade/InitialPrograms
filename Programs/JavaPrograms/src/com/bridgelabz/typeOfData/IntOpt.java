@@ -1,20 +1,30 @@
+
+/**
+ * Purpose : This program take three integer numbers from user and print the operations .
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   27/11/2018          
+ */
+
 package com.bridgelabz.typeOfData;
+
 import utility.Util1;
-import java.util.Scanner;
 
 public class IntOpt {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the value of a: ");
-		int a = sc.nextInt();
-		System.out.println("Enter the value of b: ");
-		int b = sc.nextInt();
-		System.out.println("Enter the value of c: ");
-		int c = sc.nextInt();
-		Util1.Operations(a, b, c);
 		
+		System.out.println("Enter the value of a: ");
+		int a = Util1.m();
+		System.out.println("Enter the value of b: ");
+		int b = Util1.m();
+		System.out.println("Enter the value of c: ");
+		int c = Util1.m();
+		System.out.println(a+(b*c));
+		System.out.println((a*b)+c);
+		System.out.println(c+(a/b));
+		System.out.println((a%b)+c);
 
 	}
 

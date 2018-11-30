@@ -1,3 +1,14 @@
+
+/**
+ * Purpose : This program take two input from user and find the day is between 20 march and 
+ *           20 june.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   27/11/2018          
+ */
+
+
+
 package com.bridgelabz.typeOfData;
 import utility.Util1;
 import java.util.Scanner;
@@ -6,11 +17,16 @@ public class DayMonth {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		
+		//Take a input from user in day and month.
 		System.out.println("Enter the value of day and month");
-		int d = sc.nextInt();
-		int m = sc.nextInt();
-		Util1.day(d, m);
+		int d = Util1.m();
+		int m = Util1.m();
+		boolean result = Util1.day(d, m);
+		
+		// print the day of month between 20 march and 20 June
+		System.out.println(result);
+		
 			
 				
 

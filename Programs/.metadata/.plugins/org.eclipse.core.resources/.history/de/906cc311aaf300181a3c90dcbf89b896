@@ -1,0 +1,30 @@
+
+/**
+ * Purpose : This program take n input from user and print which number between 1 and 6 fall 
+ *           maximum number of times.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   27/11/2018          
+ */
+
+package com.bridgelabz.typeOfData;
+
+import java.util.Scanner;
+
+public class RollDie {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of times rolling a dice");
+		int n = sc.nextInt();
+		
+			
+			
+		
+		
+		
+
+	}
+
+}

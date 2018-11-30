@@ -1,3 +1,12 @@
+
+/**
+ * Purpose : This program print the upperCase W using asterisk 
+ *           pattern.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   28/11/2018          
+ */
+
 package com.bridgelabz.typeOfData;
 import utility.Util1;
 public class WPattern {

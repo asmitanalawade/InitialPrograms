@@ -1,0 +1,30 @@
+
+/**
+ * Purpose : This program take three input from user i.e day, month, year and print the day of 
+ *           week that date.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   28/11/2018          
+ */
+
+
+
+package com.bridgelabz.typeOfData;
+import utility.Util1;
+import java.util.Scanner;
+
+public class DayOfWeek {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		//take input from user in day, month and year
+		System.out.println("Enter the value of day, month and year");
+		int d = sc.nextInt();
+		int m = sc.nextInt();
+		int y = sc.nextInt();
+		
+		Util1.DayOfWeek(d, m, y);
+	}
+
+}

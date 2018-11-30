@@ -1,0 +1,18 @@
+package com.bridgelabz.typeOfData;
+import utility.Util1;
+import java.util.Scanner;
+
+public class CarLoan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the values of principal , rate and year");
+		double principal = sc.nextDouble();
+		double rate = sc.nextDouble();
+		double year = sc.nextDouble();
+		Util1.Payment(principal, rate, year);
+		
+	}
+
+}

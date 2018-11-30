@@ -1,0 +1,33 @@
+
+/**
+ * Purpose : This program take three input from user i.e P, Y and R and calculate the monthly 
+ *           payment using formula.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   28/11/2018          
+ */
+
+
+
+
+package com.bridgelabz.typeOfData;
+import utility.Util1;
+import java.util.Scanner;
+
+public class CarLoan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the values of principal , rate and year");
+		double principal = sc.nextDouble();
+		double rate = sc.nextDouble();
+		double year = sc.nextDouble();
+		double result = Util1.Payment(principal, rate, year);
+		System.out.println("Monthly payment = " + result);
+		
+		//Util1.Payment(principal, rate, year);
+		
+	}
+
+}

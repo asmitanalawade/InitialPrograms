@@ -1,0 +1,25 @@
+
+/**
+ * Purpose  : This program take 100 integers containing 1 to 100 as input and among of them
+ *           one number is repeated twice. Print repeated number.
+ * @author   Asmita Nalawade
+ * @version  1.0
+ * @since    29/11/2018           
+ */
+
+package com.bridgelabz.typeOfData;
+import utility.Util1;
+public class RepeatedNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 100;
+		int array[] = new int[n];
+		System.out.println("Repeated elements are: ");
+		int result = Util1.RepeatNum(n, array);
+		System.out.println(result + " ");
+		
+
+	}
+
+}

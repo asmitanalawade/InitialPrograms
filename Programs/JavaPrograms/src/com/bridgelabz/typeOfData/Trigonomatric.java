@@ -1,16 +1,25 @@
+
+/**
+ * Purpose : This program take the input from user in degree and print the trigonomatric 
+ *           functions.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   27/11/2018          
+ */
+
 package com.bridgelabz.typeOfData;
 import utility.Util1;
-import java.util.Scanner;
+
  class Trigonomatric {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Enter the value of angle in degree");
-		double degree = sc.nextDouble();
+		double degree = Util1.n();
+		double result = Util1.Triag(degree);
 		
-		Util1.Triag(degree);
-		
+		System.out.println("sin("+ degree +") = " + result);	
 
 	}
 
