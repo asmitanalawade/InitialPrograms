@@ -1,0 +1,44 @@
+
+/**
+ * Purpose : This program  take input from user and print 1)harmonic number 2) decimal to binary number
+ *           3) sin of an angle and 4) cosine of an angle.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   30/11/2018          
+ */
+
+package com.bridgelabz.functional;
+
+import com.bridgelabz.functionsandlibraries.MathFunctions;
+
+public class MathOperations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter choice: 1] print the harmonics series"
+				                       + "2]print binary number");
+		
+		int choice = MathFunctions.m();
+		
+		
+		switch(choice){
+		
+		case 1 :
+			  System.out.println("Enter the number for harmonic series");
+		      int n = MathFunctions.m();
+              double sum = 0;
+              double result = MathFunctions.harmonics(n, sum);
+              System.out.println("Value of the harmonic series is : "+ result);
+              break;
+		case 2:
+			 System.out.println("Enter the decimal number");
+			 int dec = MathFunctions.m();
+			 int i = 1;
+			 int j = i-1;
+			 int [] bin_num =new int[100];
+			 MathFunctions.binary(dec, i, j, bin_num);
+			 break;
+		}
+	}
+	
+}

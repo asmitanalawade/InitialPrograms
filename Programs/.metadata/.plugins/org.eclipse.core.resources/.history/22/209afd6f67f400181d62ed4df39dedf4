@@ -1,0 +1,27 @@
+package com.bridgelabz.functional;
+import java.util.Arrays;
+
+import com.bridgelabz.functionsandlibraries.StringFunctions;;
+public class StringOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enetr the string");
+		String str1 = StringFunctions.inputstr();
+		System.out.println("Enter the string");
+		String str2 = StringFunctions.inputstr();
+		StringFunctions.Anagram(str1, str2);
+	}
+	public static void Palindrom(String str1) {
+		String reverse = "";
+		int n = str1.length();
+	    for(int i = 0; i >= n - 1; i--) 
+	    	reverse = reverse + str1.charAt(i);
+	    
+	    if (str1.equals(reverse))
+	         System.out.println("The string is a palindrome.");
+	      else
+	         System.out.println("The string isn't a palindrome.");
+	}
+
+}

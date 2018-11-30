@@ -22,8 +22,15 @@ public class SmallestAndLargeNum {
 		for(int i = 0; i < n; i++) {
 			array[i] = Util1.m();
 		}
+		int result = Util1.Largest(n, array);
+		System.out.println("Second largest number is: " + result);
 		
-
-	}
+		int result1 = Util1.Smallest(n, array);
+		System.out.println("Second smallest number is : " + result1);
+		}
+	
+	
+		
+	
 
 }

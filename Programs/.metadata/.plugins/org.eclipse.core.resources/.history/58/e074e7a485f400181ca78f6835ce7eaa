@@ -1,0 +1,89 @@
+package com.bridgelabz.functionsandlibraries;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class StringFunctions {
+	static Scanner sc = new Scanner(System.in);
+	public static int m() {
+		return sc.nextInt();
+	}
+	
+	public static double n() {
+		return sc.nextDouble();
+	}
+	public static String inputstr() {
+		return sc.next();
+	}
+	
+//*********************************************************************************************
+	
+	public static void Anagram(String str1,String str2) {
+		//replace the str1 and str2
+		String s1 = str1.replaceAll("\\n", " ");
+		String s2 = str2.replaceAll("\\n", " ");
+		boolean status = true;
+		if(s1.length() != s2.length()) {
+		  status = false;
+			
+		}else {
+	
+			char[] s1Array = s1.toCharArray();
+			char[] s2Array = s2.toCharArray();
+			Arrays.sort(s1Array);
+			Arrays.sort(s2Array);
+			status = Arrays.equals(s1Array,s2Array);
+			
+		}
+		if(status) {
+			System.out.println(s1 + " and " + s2 + " is a Anagram");
+		}else {
+			System.out.println(s1 + " and " + s2 + " is not Anagram");
+		}
+	}
+	//*********************************************************************
+	public static void Palindrom(String str) {
+		String reverse = " ";
+		int n = str.length();
+	    for(int i = 0; i >= n - 1; i--) 
+	    	reverse = reverse + str.charAt(i);
+	    
+	    if (str.equals(reverse)) 
+	         System.out.println("The string isn't a palindrome.");
+	    else 
+	         System.out.println("The string is a palindrome.");
+	    
+	    
+	}
+    //*********************************************************************
+	public static void PermuIterative(String str3, int s, int e) {
+		
+			if(s == e) {
+				System.out.println(str3);
+			}else {
+				for(int i = s; i <= e; i++) {
+					
+					str3 = swap(str3, s, i);
+					PermuIterative(str3, s+1, e);
+					str3 = swap(str3, s, i);
+				}
+					
+			}
+		}
+		public static String swap(String a, int i,int j) {
+			char temp;
+			char [] array = a.toCharArray();
+			temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+			return String.valueOf(array);
+		
+		
+	}
+	
+	//***********************************************************************
+		
+		
+
+}
+

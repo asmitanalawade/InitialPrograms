@@ -347,12 +347,12 @@ public class Util1 {
 	 public static void PowerOfTwo(int result) {
 		
 		 boolean status;
-		if(result % 2 != 0) {
+		if(result % 2 == 1) {
 			 status = false;
 		 }else {
 			 status = true;
 		 }
-		 if(status = true) {
+		 if(status) {
 			 System.out.println("The resultant number is power of 2");
 		 }else {
 			 System.out.println("The resultant number is not power of 2");
@@ -362,31 +362,19 @@ public class Util1 {
 
 //*****************************************************************************************
 	 
-	 public static void DecToBin(int n, int power) {
-		 while (power <= n/2) {
-	            power *= 2;
-	        }
-	  
-	        // check for presence of powers of 2 in n, from largest to smallest
-	        while (power > 0) {
-                
-	            // power is not present in n 
-	            if (n < power) {
-	                System.out.print(0);
-	            }
-
-	            // power is present in n, so subtract power from n
-	            else {
-	                System.out.print(1);
-	                n -= power;
-	            }
-
-	            // next smallest power of 2
-	            power /= 2;
-	        }
-
-	        System.out.println();
-
+	 public static void DecToBin(int n, int i, int j, int bin_num[]) {
+		
+		 while(n != 0) {
+				bin_num[i++] = n % 2;
+				n /= 2;
+			}
+			
+			System.out.println("Binary number is: ");
+			for(j = i -1; j > 0; j--) {
+				System.out.print(bin_num[j]);
+			}
+			System.out.println("\n");
+            
 	 }
 //********************************************************************************************
 	 
@@ -433,7 +421,7 @@ public class Util1 {
 		         freq_num = key;
 		     }
 		}
-		return key;
+		return freq_num;
 			
 	}	
 //*******************************************************************************************
@@ -448,4 +436,41 @@ public class Util1 {
 			}
 		
 	 }
+//*********************************************************************************************
+	 
+	 public static int Largest(int n, int array[]) {
+		 int largest = array[0];
+			int secondLargest = array[0];
+			for(int i = 0; i < n; i++) {
+				if(array[i] > largest) {
+					secondLargest = largest;
+					largest = array[i];
+				}else if(array[i] > secondLargest) {
+					secondLargest = array[i];
+					
+				}	
+			}
+			return secondLargest;
+	 }
+	 public static int Smallest(int n, int array[]) {
+			
+			int smallest = 0;
+			int secondSmallest = 0;
+			for(int i = 0; i < n; i++) {
+				if(array[i] == smallest) {
+					secondSmallest = smallest;
+				}else if(array[i] < smallest) {
+					secondSmallest = smallest;
+					smallest = array[i];
+				}else if(array[i] < secondSmallest){
+					secondSmallest = array[i];
+					
+				}
+				
+			}
+			return secondSmallest;
+	 }	
+//********************************************************************************************
+	 
+	 
 }

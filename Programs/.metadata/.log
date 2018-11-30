@@ -30,3 +30,41 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.jface.text 2 0 2018-11-29 14:15:57.136
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-11-30 08:56:09.388 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-30 09:36:51.975
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-30 09:36:51.980
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-30 10:38:57.979
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-30 10:38:57.980
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-11-30 14:17:36.513 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-30 14:21:38.021
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-30 14:21:38.039
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-30 16:02:30.478
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-30 16:02:30.484
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

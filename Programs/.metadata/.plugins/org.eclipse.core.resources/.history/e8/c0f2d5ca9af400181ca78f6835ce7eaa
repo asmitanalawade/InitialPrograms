@@ -1,0 +1,23 @@
+package com.bridgelabz.functionsandlibraries;
+
+import java.util.Scanner;
+
+public class MathFunctions {
+	
+	static Scanner sc = new Scanner(System.in);
+	public static int m() {
+		return sc.nextInt();
+	}
+	
+	public static double n() {
+		return sc.nextDouble();
+	}
+	public static String inputstr() {
+		return sc.next();
+	}
+
+//*********************************************************************************************
+	
+	
+
+}

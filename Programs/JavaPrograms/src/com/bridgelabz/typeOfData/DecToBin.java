@@ -19,8 +19,11 @@ public class DecToBin {
 		
 		System.out.println("Enter the decimal number");
 		int n = Util1.m();
-		int power = 1;
+		int i = 1;
+		int j = i-1;
+		int [] bin_num =new int[100];
 		
+		Util1.DecToBin(n, i, j, bin_num);
 	}
 
 }

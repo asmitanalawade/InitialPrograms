@@ -1,0 +1,23 @@
+package com.bridgelabz.functional;
+
+import com.bridgelabz.functionsandlibraries.MathFunctions;
+
+public class MathOperations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = MathFunctions.m();
+        double sum = 0;
+        System.out.println("Harmonic series is: ");
+        while(n > 0) {
+        	
+        	sum = sum + (double)1/n;
+        	n--;
+        	System.out.println(" " + sum);
+        }
+       System.out.println(" ");
+       System.out.println("Value of the harmonic series is : "+ sum);
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.bridgelabz.functional;
+
+import com.bridgelabz.functionsandlibraries.MathFunctions;
+
+public class MathOperations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = MathFunctions.m();
+        double sum = 0;
+        double result = MathFunctions.harmonics(n, sum);
+        System.out.println("Value of the harmonic series is : "+ result);
+
+	}
+	public static void (int n, )
+
+}

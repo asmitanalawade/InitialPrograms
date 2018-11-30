@@ -1,0 +1,50 @@
+package com.bridgelabz.functional;
+import java.util.Arrays;
+
+import com.bridgelabz.functionsandlibraries.StringFunctions;
+
+import utility.Utility;;
+public class StringOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 System.out.println("Enetr the string");
+	      String str1 = StringFunctions.inputstr();
+	      int n = str1.length();
+	      System.out.println("Enter the string");
+	      String str2 = StringFunctions.inputstr();
+		
+		System.out.println("Enter 1] Check the given two strings are anagram or not "
+				+ "\n 2] Check the given string is palindrome or not "
+				 + "\n 3] Find all permutation of a String using recursion method"
+				 + "\n 4] Find all permutation of a String using Iterative method" );
+		int choice = StringFunctions.m();
+		System.out.println("Enter your choice to perform the string operations");
+		
+		  switch(choice) {
+		
+		   case 1 :
+		     
+              System.out.println("");
+		      StringFunctions.Anagram(str1, str2);
+		       break;
+		       
+		   case 2 :     
+		      System.out.println("Enter the string for palindrome");
+		      
+		      StringFunctions.Palindrom(str1);
+		       break; 
+		       
+		    case 3 :
+		      System.out.println("Enter the string for permutation using recursion method");
+		      StringFunctions.PermuIterative(str1, 0, n-1);
+		      break;
+		      
+		    default :
+		    	   System.out.println("Invalid input");
+		     
+		  }
+			  
+	}
+	
+}

@@ -1,0 +1,19 @@
+package com.bridgelabz.functional;
+import java.util.Arrays;
+
+import com.bridgelabz.functionsandlibraries.StringFunctions;;
+public class StringOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enetr the string");
+		String str1 = StringFunctions.inputstr();
+		System.out.println("Enter the string");
+		String str2 = StringFunctions.inputstr();
+		StringFunctions.Anagram(str1, str2);
+		
+		
+		
+	}
+	
+}

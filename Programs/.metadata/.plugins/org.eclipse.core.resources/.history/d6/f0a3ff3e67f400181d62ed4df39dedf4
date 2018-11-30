@@ -1,0 +1,46 @@
+package com.bridgelabz.functional;
+import java.util.Arrays;
+
+import com.bridgelabz.functionsandlibraries.StringFunctions;;
+public class StringOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enetr the string");
+		String str1 = StringFunctions.inputstr();
+		System.out.println("Enter the string");
+		String str2 = StringFunctions.inputstr();
+		String s1 = str1.replaceAll("\\n", " ");
+		String s2 = str2.replaceAll("\\n", " ");
+		boolean status = true;
+		if(s1.length() != s2.length()) {
+		  status = false;
+			
+		}else {
+	
+			char[] s1Array = s1.toCharArray();
+			char[] s2Array = s2.toCharArray();
+			Arrays.sort(s1Array);
+			Arrays.sort(s2Array);
+			status = Arrays.equals(s1Array,s2Array);
+			
+		}
+		if(status) {
+			System.out.println(s1 + " and " + s2 + " is a Anagram");
+		}else {
+			System.out.println(s1 + " and " + s2 + " is not Anagram");
+		}
+	}
+	public static void Palindrom(String str1) {
+		String reverse = "";
+		int n = str1.length();
+	    for(int i = 0; i >= n - 1; i--) 
+	    	reverse = reverse + str1.charAt(i);
+	    
+	    if (str1.equals(reverse))
+	         System.out.println("The string is a palindrome.");
+	      else
+	         System.out.println("The string isn't a palindrome.");
+	}
+
+}
