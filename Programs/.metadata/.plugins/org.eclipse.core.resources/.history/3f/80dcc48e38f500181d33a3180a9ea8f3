@@ -1,0 +1,30 @@
+package com.bridgelabz.functional;
+
+import com.bridgelabz.functionsandlibraries.MathFunctions;
+
+public class Collinear {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter the points");
+		int x1 = MathFunctions.m();
+		int x2 = MathFunctions.m();
+		int x3 = MathFunctions.m();
+		int y1 = MathFunctions.m();
+		int y2 = MathFunctions.m();
+		int y3 = MathFunctions.m();
+		
+		int slopeAB = (y2 - y1)/(x2 - x1);
+		int slopeBC = (y3 - y2)/(x3 - x2);
+		int slopeAC = (y3 - y1)/(x3 - x1);
+		
+		if(slopeAB == slopeBC && slopeBC == slopeAC) {
+			System.out.println("The points are collinear");
+		}else {
+			System.out.println("The points are not collinear");
+		}
+       
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.bridgelabz.functional;
+
+import com.bridgelabz.functionsandlibraries.MathFunctions;
+
+public class FutureValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Enter the value of dollers, rate and periode");
+		double C = MathFunctions.n();
+		double r = MathFunctions.n();
+		double T = MathFunctions.n();
+		System.out.println("Present value = " + C);
+		double futureValue = C * (1 + r)*Math.sqrt(T);
+		System.out.println("Future value = " + futureValue);
+	
+		
+
+	}
+
+}

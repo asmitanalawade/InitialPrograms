@@ -1,0 +1,20 @@
+package com.bridgelabz.functional;
+
+public class Factors {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = Integer.parseInt(args[0]);
+		int factor = 1;
+		int i = 1;
+		while(n > 0) {
+			System.out.println("Factorial of " + n + " are = " + factor);
+			factor = factor * i;
+			i++;
+			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.bridgelabz.functional;
+
+public class Factors {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = Integer.parseInt(args[0]);
+		int factor = 1;
+		int i;
+		for(i = 1; i <= n; i++ ) {
+			//if(n % i == 0) {
+			factor = factor * i;
+			
+			System.out.println(" " + i);  
+			
+		}
+		System.out.println("Factorial of " + n + " are = " + factor);
+
+	}
+
+}

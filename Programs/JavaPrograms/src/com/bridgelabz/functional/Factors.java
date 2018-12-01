@@ -1,17 +1,18 @@
 package com.bridgelabz.functional;
-import utility.Utility;
-import java.util.Scanner;
+
+import com.bridgelabz.functionsandlibraries.MathFunctions;
 
 public class Factors {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number");
-		int n = sc.nextInt();
-		Utility.Factor(n);
+		int n = Integer.parseInt(args[0]);
+		long factor = 1;
 		
 		
+		long result = MathFunctions.factor(n, factor);
+		System.out.println("Factorial of " + n + " are = " + result);
+
 	}
 
 }

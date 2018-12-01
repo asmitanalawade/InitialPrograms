@@ -79,7 +79,7 @@ static Scanner sc = new Scanner(System.in);
 	}
 	//***********************************************************************************
 	
-	public static void Factor(int n) {
+	public static void prifactor(int n) {
 		for(int i = 2; i <= n; i++) {
 			while(n % i == 0) {
 				System.out.println(i + " ");

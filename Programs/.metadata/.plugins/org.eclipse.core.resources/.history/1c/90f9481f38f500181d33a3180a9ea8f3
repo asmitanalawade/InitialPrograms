@@ -1,0 +1,33 @@
+package com.bridgelabz.functional;
+
+import com.bridgelabz.functionsandlibraries.MathFunctions;
+
+public class Collinear {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter the points");
+		int x1 = MathFunctions.m();
+		int x2 = MathFunctions.m();
+		int x3 = MathFunctions.m();
+		int y1 = MathFunctions.m();
+		int y2 = MathFunctions.m();
+		int y3 = MathFunctions.m();
+		int s = (y3 - y2) * x1 + (x2 - x3) * y1 + (x3 * y2 - x2 * y3);
+        if (s < 0)
+
+            System.out.println("The points are NOT collinear");
+
+        else if (s > 0)
+
+            System.out.println("The points are NOT collinear");
+
+        else
+
+            System.out.println("The points are collinear");
+
+       
+
+	}
+
+}
