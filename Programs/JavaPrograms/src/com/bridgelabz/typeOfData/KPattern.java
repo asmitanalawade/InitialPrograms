@@ -10,17 +10,23 @@
 package com.bridgelabz.typeOfData;
 //import java.util.Scanner;
 
+import java.util.Scanner;
+
 import utility.Util1;
 
 public class KPattern {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//Scanner sc = new Scanner(System.in);
-		//System.out.println("Enter the number if rows");
-		//int n = sc.nextInt();
-		int count = 5;
-	 Util1.KDWPattern(count);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string");
+		String name = sc.next();
+		
+		int flag = Util1.initial(name);
+		if(flag == 0) {
+			System.out.println("This is invalid input...try again...");
+		}
+	
 
 	}
 

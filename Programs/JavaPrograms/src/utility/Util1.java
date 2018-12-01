@@ -28,34 +28,38 @@ public class Util1 {
 	//	 System.out.println(" Hi ");
 	// }
 	 
-	 //****************************************************************************
+//********************************************************************************************
 	 
-	 public static void D_pattern(int n) {
-			// TODO Auto-generated method stub
-			 for (int i = 0; i < n; i++){ 
-	             
-		            // loop for columns 
-		            for (int j = 0; j <= n; j++){ 
-		                  
-		                // Logic to generate stars 
-		                // for * 
-		                if (j == 1 || ((i == 0 ||  i == n-1) && (j > 1 && j < n-2)) |(j == n-2 && i != 0 &&  i != n-1)) 
-		                    System.out.print("**");  
-		                      
-		                // For the spaces 
-		                else
-		                    System.out.print("  ");  
-		            } 
-		              
-		        // For changing line 
-		        System.out.println(); 
-		        } 
-			}  
-    //*******************************************************************************
+	public static int initial(String name) {
+		 int n = 9;
+		 int count = 5;
+		 int flag = 1;
+		  if(name.charAt(0) == 'K') {
+			  
+			  Util1.kPattern(count);
+		  }else if(name.charAt(0)== 'D') {
+			  
+			  Util1.dpattern(n);
+		  }else if(name.charAt(0)== 'W') {
+			  Util1.wpattern(n);
+		  }else
+			  flag =0;
+			  
+		  return flag;
+		 
+	}
 	 
-	 public static void KDWPattern(int count) {
+	 
+	 
+	 
+	 
+     //**************************************************************** 
+	 public static void kPattern(int count) {
+	
+		
+		 
 		 //loop for rows
-		 for(int i = 0; i < 9; i++) {
+		 for(int i = 0; i < 10; i++) {
 			 //loop for column
 				for(int j = 0; j < 2; j++) {
 					System.out.print("*");
@@ -76,10 +80,11 @@ public class Util1 {
 				}
 				System.out.print("\n");
 			}
-	 
+	 }	 
+     //********************************************************	 
+	public static void dpattern(int n) {	 
 		 
-		  
-	     int n = 9;
+	    
 			// TODO Auto-generated method stub
 	     //loop for rows
 			 for (int i = 0; i < 9; i++){ 
@@ -101,8 +106,10 @@ public class Util1 {
 		        System.out.println(); 
 		        } 
 			 
-			  	 
-			 
+	}	  	 
+    //*******************************************************
+	
+	public static void wpattern(int n) {
 			 // loop for rows
 		 for(int i = 0; i < 9; i++) {
 			 // loop for column
@@ -134,41 +141,11 @@ public class Util1 {
 			}
 
 	 }
-   //**********************************************************************************
+//********************************************************************************************
 	 
-	 public static void W_pattern() {
-		 for(int i = 0; i <= 9; i++) {
-				for(int j = 0; j <= 1; j++) {
-					System.out.print("*");
-				}
-				
-				for(int k = 8; k >= i; k--) {
-					System.out.print(" ");
-				}
-				for(int j = 0; j <= 1; j++) {
-					System.out.print("*");
-				}
-				for (int l = 1; l <= i; l++) {
-					System.out.print("  ");
-				}
-				for(int j = 0; j <=1; j++) {
-					System.out.print("*");
-				}
-
-				for(int k = 8; k >= i; k--) {
-					System.out.print(" ");
-				}
-				for(int j = 0; j <= 1; j++) {
-					System.out.print("*");
-				}
-				System.out.print("\n");
-			}
-
-	 }
-   //********************************************************************************
 	 
 	 public static boolean Leap(int year) {
-		boolean status = false;
+		boolean status;
 			
 				if(year % 4 == 0) {
 					
@@ -192,12 +169,15 @@ public class Util1 {
 	 }
    //********************************************************************************** 
 	 
-	 public static int sum(int n) {
-		 int a = 1 + (int)(Math.random()*n);
-			int b = 1 + (int)(Math.random()*n);
-			int sum = a + b;
-			return sum;
-	 }
+//	 public static void sum(int n) {
+//		 int a = 1 + (int)(Math.random()*n);
+//		 System.out.println(a);
+//			int b = 1 + (int)(Math.random()*n);
+//			 System.out.println(b);
+//			  int sum = a + b;
+//			 System.out.println("Sum of two dice =" + sum);
+//	 }
+	
   //***********************************************************************************
 	 
 	 public static void ran(int n) {

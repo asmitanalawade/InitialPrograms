@@ -23,10 +23,10 @@ public class DoubleOpt {
 		System.out.println("Enter the value of c: ");
 		Double c = Util1.n();
 	    
-		    System.out.println(a+(b*c));
-			System.out.println((a*b)+c);
-			System.out.println(c+(a/b));
-			System.out.println((a%b)+c);
+		System.out.println("a+b*c = " + ((a+b)*c));
+		System.out.println("a*b+c = " + ((a*b)+c));
+		System.out.println("c+a/b = " + ((c+a)/b));
+		System.out.println("a%b+c = " + ((a%b)+c));
 
 	}
 

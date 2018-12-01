@@ -19,8 +19,9 @@ public class DayMonth {
 		// TODO Auto-generated method stub
 		
 		//Take a input from user in day and month.
-		System.out.println("Enter the value of day and month");
+		System.out.println("Enter the value of day");
 		int d = Util1.m();
+		System.out.println("Enter the value of month");
 		int m = Util1.m();
 		boolean result = Util1.day(d, m);
 		

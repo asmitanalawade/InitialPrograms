@@ -21,10 +21,11 @@ public class IntOpt {
 		int b = Util1.m();
 		System.out.println("Enter the value of c: ");
 		int c = Util1.m();
-		System.out.println(a+(b*c));
-		System.out.println((a*b)+c);
-		System.out.println(c+(a/b));
-		System.out.println((a%b)+c);
+		
+		System.out.println("a+b*c = " + ((a+b)*c));
+		System.out.println("a*b+c = " + ((a*b)+c));
+		System.out.println("c+a/b = " + ((c+a)/b));
+		System.out.println("a%b+c = " + ((a%b)+c));
 
 	}
 

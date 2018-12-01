@@ -16,13 +16,13 @@ public class LeapYear {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Enter the year");
 		int year = Util1.m();
 		
 		if(year >= 1582) {
 			//System.out.println("Year is greater than equal to 1582");
 			 boolean status = Util1.Leap(year);
-			if(status == true) {
+			if(status) {
 				System.out.println(year + " is a leap year");
 			}else {
 				System.out.println(year + " is not a leap year");

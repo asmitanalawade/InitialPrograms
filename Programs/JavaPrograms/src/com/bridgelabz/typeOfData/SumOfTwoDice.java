@@ -9,12 +9,24 @@
 package com.bridgelabz.typeOfData;
 import utility.Util1;
 public class SumOfTwoDice {
+	
+	 public static int sum(int n) {
+		 int a = 1 + (int)(Math.random()*n);
+		 System.out.println(a);
+			int b = 1 + (int)(Math.random()*n);
+			 System.out.println(b);
+			  int sum = a + b;
+			 return sum;
+	 }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n = 6;
-	 int result = Util1.sum(n);
-	 System.out.println("Sum of two dice is: " + result);
+	   
+	    int sum = sum(n); 
+	    System.out.println("Sum of two dice =" + sum);
+		
 	}
+	
 
 }
