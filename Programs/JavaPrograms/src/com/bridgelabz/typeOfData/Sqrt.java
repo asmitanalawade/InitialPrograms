@@ -9,16 +9,16 @@
 
 package com.bridgelabz.typeOfData;
 import utility.Util1;
-import java.util.Scanner;
+
 
 public class Sqrt {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		
 		// Nonnegative number is taken from user
 		System.out.println("Enter the nonnegative number");
-		double c = sc.nextDouble();
+		double c = Util1.inputDouble();
 		double result = Util1.sqrtNewtonMtd(c);
 		 System.out.println(result);
 

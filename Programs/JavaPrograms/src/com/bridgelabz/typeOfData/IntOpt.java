@@ -16,11 +16,11 @@ public class IntOpt {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Enter the value of a: ");
-		int a = Util1.m();
+		int a = Util1.inputInt();
 		System.out.println("Enter the value of b: ");
-		int b = Util1.m();
+		int b = Util1.inputInt();
 		System.out.println("Enter the value of c: ");
-		int c = Util1.m();
+		int c = Util1.inputInt();
 		
 		System.out.println("a+b*c = " + ((a+b)*c));
 		System.out.println("a*b+c = " + ((a*b)+c));

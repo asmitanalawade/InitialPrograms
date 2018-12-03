@@ -2,16 +2,19 @@ package com.bridgelabz.functionsandlibraries;
 
 import java.util.Scanner;
 
+import utility.Util1;
+
 public class MathFunctions {
-	
+	// Take input integer from user
 	static Scanner sc = new Scanner(System.in);
-	public static int m() {
+	public static int inputInt() {
 		return sc.nextInt();
 	}
-	
-	public static double n() {
+	// Take double value from user
+	public static double inputDouple() {
 		return sc.nextDouble();
 	}
+	// Take string from user
 	public static String inputstr() {
 		return sc.next();
 	}
@@ -19,6 +22,7 @@ public class MathFunctions {
 //*********************************************************************************************
 	public static double harmonics(int n, double sum) {
 		 System.out.println("Harmonic series is: ");
+		 //Take condition for n is greater than 0 
 	        while(n > 0) {
 	        	
 	        	sum = sum + (double)1/n;
@@ -40,7 +44,78 @@ public class MathFunctions {
 			System.out.print(bin_num[j]);
 		}
 		System.out.println("\n");
-	}	
+	}
+	//******************************************************
+	
+	 public static double sinx(double x, int n1) {
+			// convert x to an angle between -2 PI and 2 PI
+		         x = x * (Math.PI/180);
+	           System.out.println("x = " + x);
+		        // compute the Taylor series approximation
+		        double term = 1.0;      // ith term = x^i / i!
+		        double sum  = 0.0;      // sum of first i terms in taylor series
+	            
+		        for (int i = 1; i <= n1; i++) {
+		        	if(term != 0) {
+		        		if(i % 2 == 1) {
+		        	  double numerator = Math.pow(x, i);
+		        	  System.out.println("Numerator: " + numerator);
+		        	  double denominator = Util1.factorial(i);
+		        	  System.out.println("Denominator: " + denominator);
+		              term = term * (numerator / denominator);
+		        		}
+		              if (i % 4 == 1) 
+		               	sum = sum + term;
+		              if (i % 4 == 3) 
+		            	sum = sum - term;
+		             
+		        	}
+		        }
+		        return sum;
+		 }
+		 
+		 //********************************************************
+		 
+		 public static double cosx(double x1, int m) {
+			// convert x to an angle between -2 PI and 2 PI
+	         x1 = x1 * (Math.PI/180);
+	       System.out.println("x1 = " + x1);
+	        // compute the Taylor series approximation
+	        double term = 1.0;      // ith term = x^i / i!
+	        double sum  = 0.0;      // sum of first i terms in taylor series
+	        
+	        for (int i = 0; i <= m; i++) {
+	        	if(term != 0) {
+	        		if(i % 2 == 0) {
+	        	  double numerator = Math.pow(x1, i);
+	        	  System.out.println("Numerator: " + numerator);
+	        	  double denominator = Util1.factorial(i);
+	        	  System.out.println("Denominator: " + denominator);
+	              term = term * (numerator / denominator);
+	        		}
+	              if (i % 4 == 0) 
+	               	sum = sum + term;
+	              if (i % 4 == 2) 
+	            	sum = sum - term;
+	             
+	        	}
+	        }
+	        return sum;
+			 
+		 }
+		//********************************************************* 
+		 public static double factorial(int n) {
+			 int factorial = 1;
+	         for(int i = 1; i <= n; i++ ) {
+				
+				factorial = factorial * i;
+				
+				
+				
+			}
+		     
+		      return factorial;
+		}
 
 //**********************************************************************************************
 	
@@ -119,6 +194,6 @@ public class MathFunctions {
 		}
 	}
 //*********************************************************************************************
-	
+	public static void maxMinValue(int n, int[] array, int maxValue, int minValue) {
 	
 }

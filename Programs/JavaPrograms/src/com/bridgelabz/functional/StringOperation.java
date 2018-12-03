@@ -25,8 +25,10 @@ public class StringOperation {
 				+ "\n 2] Check the given string is palindrome or not "
 				 + "\n 3] Find all permutation of a String using recursion method"
 				 + "\n 4] Find all permutation of a String using Iterative method" );
-		int choice = StringFunctions.m();
+		
 		System.out.println("Enter your choice to perform the string operations");
+		int choice = StringFunctions.inputInt();
+		
 		
 		  switch(choice) {
 		
@@ -51,8 +53,9 @@ public class StringOperation {
 		      System.out.println("Enter the string for permutation using recursion method");
 		      String str3 = StringFunctions.inputstr();
 		      int n1 = str3.length();
-		      StringFunctions.PermuIterative(str3, 0, n1-1);
+		      StringFunctions.PermuRecursive(str3, 0, n1-1);
 		      break;
+		      
 		      
 		    default :
 		    	   System.out.println("Invalid input");

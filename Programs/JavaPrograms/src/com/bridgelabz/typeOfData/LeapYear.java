@@ -17,7 +17,7 @@ public class LeapYear {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Enter the year");
-		int year = Util1.m();
+		int year = Util1.inputInt();
 		
 		if(year >= 1582) {
 			//System.out.println("Year is greater than equal to 1582");

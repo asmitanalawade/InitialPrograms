@@ -17,11 +17,11 @@ public class DoubleOpt {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Enter the value of a: ");
-		double a = Util1.n();
+		double a = Util1.inputDouble();
 		System.out.println("Enter the value of b: ");
-		double b = Util1.n();
+		double b = Util1.inputDouble();
 		System.out.println("Enter the value of c: ");
-		Double c = Util1.n();
+		Double c = Util1.inputDouble();
 	    
 		System.out.println("a+b*c = " + ((a+b)*c));
 		System.out.println("a*b+c = " + ((a*b)+c));

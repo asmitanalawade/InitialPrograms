@@ -18,7 +18,7 @@ public class DecToBin {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Enter the decimal number");
-		int n = Util1.m();
+		int n = Util1.inputInt();
 		int i = 1;
 		int j = i-1;
 		int [] bin_num =new int[100];

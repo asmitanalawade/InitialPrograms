@@ -20,9 +20,9 @@ public class DayOfWeek {
 		
 		//Take input from user in day, month and year
 		System.out.println("Enter the value of day, month and year");
-		int d = Util1.m();
-		int m = Util1.m();
-		int y = Util1.m();
+		int d = Util1.inputInt();
+		int m = Util1.inputInt();
+		int y = Util1.inputInt();
 		
 		Util1.DayOfWeek(d, m, y);
 	}

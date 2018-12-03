@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class Util1 {
 	static Scanner sc = new Scanner(System.in);
-	public static int m() {
+
+	public static int inputInt() {
 		return sc.nextInt();
 	}
 	
-	public static double n() {
+	public static double inputDouble() {
 		return sc.nextDouble();
 	}
 	public static String inputString() {
@@ -169,14 +170,14 @@ public class Util1 {
 	 }
    //********************************************************************************** 
 	 
-//	 public static void sum(int n) {
-//		 int a = 1 + (int)(Math.random()*n);
-//		 System.out.println(a);
-//			int b = 1 + (int)(Math.random()*n);
-//			 System.out.println(b);
-//			  int sum = a + b;
-//			 System.out.println("Sum of two dice =" + sum);
-//	 }
+	 public static int sum(int n) {
+	 int a = 1 + (int)(Math.random()*n);
+		 System.out.println(a);
+			int b = 1 + (int)(Math.random()*n);
+			 System.out.println(b);
+			  int sum = a + b;
+			return sum;
+	 }
 	
   //***********************************************************************************
 	 
@@ -358,23 +359,76 @@ public class Util1 {
 	 }
 //********************************************************************************************
 	 
-	 public static double sinx(double x) {
+	 public static double sinx(double x, int n) {
 		// convert x to an angle between -2 PI and 2 PI
-	         x = x % (2 * Math.PI);
-
+	         x = x * (Math.PI/180);
+           System.out.println("x = " + x);
 	        // compute the Taylor series approximation
 	        double term = 1.0;      // ith term = x^i / i!
 	        double sum  = 0.0;      // sum of first i terms in taylor series
-
-	        for (int i = 1; term != 0.0; i++) {
-	            term *= (x / i);
-	            if (i % 4 == 1) 
-	            	sum += term;
-	            if (i % 4 == 3) 
-	            	sum -= term;
+            
+	        for (int i = 1; i <= n; i++) {
+	        	if(term != 0) {
+	        		if(i % 2 == 1) {
+	        	  double numerator = Math.pow(x, i);
+	        	  System.out.println("Numerator: " + numerator);
+	        	  double denominator = Util1.factorial(i);
+	        	  System.out.println("Denominator: " + denominator);
+	              term = term * (numerator / denominator);
+	        		}
+	              if (i % 4 == 1) 
+	               	sum = sum + term;
+	              if (i % 4 == 3) 
+	            	sum = sum - term;
+	             
+	        	}
 	        }
 	        return sum;
 	 }
+	 
+	 //********************************************************
+	 
+	 public static double cosx(double x1, int m) {
+		// convert x to an angle between -2 PI and 2 PI
+         x1 = x1 * (Math.PI/180);
+       System.out.println("x1 = " + x1);
+        // compute the Taylor series approximation
+        double term = 1.0;      // ith term = x^i / i!
+        double sum  = 0.0;      // sum of first i terms in taylor series
+        
+        for (int i = 0; i <= m; i++) {
+        	if(term != 0) {
+        		if(i % 2 == 0) {
+        	  double numerator = Math.pow(x1, i);
+        	  System.out.println("Numerator: " + numerator);
+        	  double denominator = Util1.factorial(i);
+        	  System.out.println("Denominator: " + denominator);
+              term = term * (numerator / denominator);
+        		}
+              if (i % 4 == 0) 
+               	sum = sum + term;
+              if (i % 4 == 2) 
+            	sum = sum - term;
+             
+        	}
+        }
+        return sum;
+		 
+	 }
+	//********************************************************* 
+	 public static double factorial(int n) {
+		 int factorial = 1;
+         for(int i = 1; i <= n; i++ ) {
+			
+			factorial = factorial * i;
+			
+			
+			
+		}
+	     
+	      return factorial;
+	}
+
 //********************************************************************************************
 	 
 	 public static int checkRepeated(int arr[], int size)

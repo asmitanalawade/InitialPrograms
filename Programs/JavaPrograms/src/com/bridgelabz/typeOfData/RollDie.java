@@ -18,7 +18,7 @@ public class RollDie {
 		
 	      System.out.println("Enter the number of times to roll the dice :");
 			
-			int n = Util1.m();
+			int n = Util1.inputInt();
 			
 			int arr[] = new int[n];
 			

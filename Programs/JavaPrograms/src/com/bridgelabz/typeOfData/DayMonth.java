@@ -20,9 +20,9 @@ public class DayMonth {
 		
 		//Take a input from user in day and month.
 		System.out.println("Enter the value of day");
-		int d = Util1.m();
+		int d = Util1.inputInt();
 		System.out.println("Enter the value of month");
-		int m = Util1.m();
+		int m = Util1.inputInt();
 		boolean result = Util1.day(d, m);
 		
 		// print the day of month between 20 march and 20 June

@@ -1,0 +1,34 @@
+
+/**
+ * Purpose : This program compute the sin x using Taylor series expansion.
+ * @author  Asmita Nalawade
+ * @version 1.0
+ * @since   27/11/2018          
+ */
+
+package com.bridgelabz.typeOfData;
+
+import com.bridgelabz.functionsandlibraries.MathFunctions;
+
+import utility.Util1;
+
+public class Sinx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter choice : 1] find sinx" + "2] find cosx ");
+		System.out.println("Enter the choice to perform the operations");
+		int choice = MathFunctions.inputInt();
+		
+		switch(choice) {
+		System.out.println("Enter the value of x");
+		double x = Util1.inputDouble();
+		
+
+        double result = Util1.sinx(x);
+        System.out.println(result);
+		}
+
+	}
+
+}

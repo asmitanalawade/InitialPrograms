@@ -16,7 +16,7 @@ import utility.Util1;
 		// TODO Auto-generated method stub
 		
 		System.out.println("Enter the value of angle in degree");
-		double degree = Util1.n();
+		double degree = Util1.inputDouble();
 		double result = Util1.Triag(degree);
 		
 		System.out.println("sin("+ degree +") = " + result);	

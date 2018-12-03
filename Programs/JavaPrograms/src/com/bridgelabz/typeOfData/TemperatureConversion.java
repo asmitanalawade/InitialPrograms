@@ -10,15 +10,15 @@
 
 package com.bridgelabz.typeOfData;
 import utility.Util1;
-import java.util.Scanner;
+
 
 public class TemperatureConversion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in); 
+		
 		System.out.println("Enter the value of temperature in celcius or fahrenheit");
-		double T = sc.nextDouble();
+		double T = Util1.inputDouble();
 		
 		Util1.Temp(T);
 

@@ -16,13 +16,13 @@ public class MinAndMaxValue {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Enter the length of the array");
-		int n = MathFunctions.m();
+		int n = MathFunctions.inputInt();
 		int [] array = new int[n];
 		int maxValue = 0;
 		int minValue = 0;
 		System.out.println("Enter the elements of the array");
 		for(int i = 0 ; i < n; i++) {
-			array[i] = MathFunctions.m();
+			array[i] = MathFunctions.inputInt();
 		}
 		for(int i = 0; i < n; i++) {
 			if(array[i] > n) 

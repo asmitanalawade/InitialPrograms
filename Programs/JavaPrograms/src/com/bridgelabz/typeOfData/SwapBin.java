@@ -18,7 +18,7 @@ public class SwapBin {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Enter the decimal number");
-		int num = Util1.m();
+		int num = Util1.inputInt();
 		int result =  Util1.binswap(num);
 		 System.out.println("Decimal Number after swapping:"+ result);
 		 

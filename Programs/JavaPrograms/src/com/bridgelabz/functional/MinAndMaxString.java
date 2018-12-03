@@ -17,13 +17,13 @@ public class MinAndMaxString {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Enter the length of the string array");
-		int n = MathFunctions.m();
+		int n = MathFunctions.inputInt();
 		int [] array = new int[n];
 		int maxString = 0;
 		int minString = 0;
 		System.out.println("Enter the characters of the string array");
 		for(int i = 0 ; i < n; i++) {
-			array[i] = MathFunctions.m();
+			array[i] = MathFunctions.inputInt();
 		}
 		
 	}

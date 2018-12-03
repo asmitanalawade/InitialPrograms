@@ -41,8 +41,10 @@ static Scanner sc = new Scanner(System.in);
 	//***********************************************************************************
 
 	public static void leap(int n) {
+		// Number should be four digit number
 		if(n >= 1000) {
 			System.out.println("It is a Four digit number");
+			// Find the leap year
 			if(n%4 == 0) {
 				System.out.println("Leap year");
 			}else {
@@ -80,6 +82,7 @@ static Scanner sc = new Scanner(System.in);
 	//***********************************************************************************
 	
 	public static void prifactor(int n) {
+		// condition for prime numbers
 		for(int i = 2; i <= n; i++) {
 			while(n % i == 0) {
 				System.out.println(i + " ");
@@ -97,6 +100,7 @@ static Scanner sc = new Scanner(System.in);
 	//**********************************************************************************
 	
 	public static void Gambler(int stake, int goal, int num) {
+		//Initialize the bets and wins
 		int bets = 0;
 		int wins = 0;
 		for(int i = 0; i <= num; i++) {

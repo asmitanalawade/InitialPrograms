@@ -16,9 +16,9 @@ public class PresentValue {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Enter the value of dollers, rate and periode");
-		double C = MathFunctions.n();
-		double r = MathFunctions.n();
-		double T = MathFunctions.n();
+		double C = MathFunctions.inputInt();
+		double r = MathFunctions.inputInt();
+		double T = MathFunctions.inputInt();
 		System.out.println("After investing money  = " + C);
 		
 		double result = MathFunctions.presentValue(C, r, T);

@@ -1,15 +1,17 @@
 package com.bridgelabz.functionsandlibraries;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class StringFunctions {
 	static Scanner sc = new Scanner(System.in);
-	public static int m() {
+	public static int inputInt() {
 		return sc.nextInt();
 	}
 	
-	public static double n() {
+	public static double InputDouble() {
 		return sc.nextDouble();
 	}
 	public static String inputstr() {
@@ -59,7 +61,7 @@ public class StringFunctions {
 	    
 	}
     //*********************************************************************
-	public static void PermuIterative(String str3, int s, int e) {
+	public static void PermuRecursive(String str3, int s, int e) {
 		  // Check condition for start and end are equal
 			if(s == e) {
 				System.out.println(str3);
@@ -67,7 +69,7 @@ public class StringFunctions {
 				for(int i = s; i <= e; i++) {
 					//Swapping 
 					str3 = swap(str3, s, i);
-					PermuIterative(str3, s+1, e);
+					PermuRecursive(str3, s+1, e);
 					str3 = swap(str3, s, i);
 				}
 					
@@ -76,6 +78,7 @@ public class StringFunctions {
 		public static String swap(String a, int i,int j) {
 			char temp;
 			char [] array = a.toCharArray();
+			//reverse the values within an array
 			temp = array[i];
 			array[i] = array[j];
 			array[j] = temp;
@@ -83,8 +86,9 @@ public class StringFunctions {
 		
 		
 	}
-	
-	//***********************************************************************
+	//*********************************************************************
+		
+//*************************************************************************************************
 		
 	 public static void calender(int month, int year, String[] months, int[] days) {
 		 
@@ -127,7 +131,9 @@ public class StringFunctions {
 		        return false;
 		    }
 
-	 
+//*********************************************************************************************
+		    
+		
 
 }
 
