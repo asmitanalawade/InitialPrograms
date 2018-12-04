@@ -1,5 +1,10 @@
  package utility;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Util1 {
@@ -35,6 +40,7 @@ public class Util1 {
 		 int n = 9;
 		 int count = 5;
 		 int flag = 1;
+		 
 		  if(name.charAt(0) == 'K') {
 			  
 			  Util1.kPattern(count);
@@ -182,6 +188,7 @@ public class Util1 {
   //***********************************************************************************
 	 
 	 public static void ran(int n) {
+		 //Take 5 random numbers
 		 double a = Math.random();
 			System.out.println(a);
 			double b = Math.random();
@@ -193,10 +200,11 @@ public class Util1 {
 			double e = Math.random();
 			System.out.println(e);
 			
+			//Find the min, max and average numbers of random number
 			double min = Math.min(a, Math.min(b, Math.min(c, Math.min(d, e))));
 			double max = Math.max(a, Math.max(b, Math.max(c, Math.max(d, e))));
 			double average = (a + b + c + d + e)/ 5;
-			
+			//Print the min, max and average numbers
 			System.out.println("Min = " + min);
 			System.out.println("Max = " + max);
 			System.out.println("Average = " + average);
@@ -219,7 +227,7 @@ public class Util1 {
 	//******************************************************************************** 
 	 
 	 public static void DayOfWeek(int d, int m, int y) {
-		
+		//Calculate the year,leap year, month,day
 		 int y0 = y - (14 - m) / 12;
 	     int x = y0 + y0/4 - y0/100 + y0/400;
 	     int m0 = m + 12 * ((14 - m) / 12) - 2;
@@ -229,7 +237,8 @@ public class Util1 {
 	        //System.out.println(x);
 	        //System.out.println(m0);
 	        //System.out.println(d0);
-	        
+	     
+	        //Print the day of week
 	        if(d0 == 0) {
 	        	System.out.println("It is Sunday");
 	        }else if(d0 == 1) {
@@ -262,6 +271,7 @@ public class Util1 {
 //***********************************************************************************************
 	 
 	 public static double Triag(double degree) {
+		 //Convert the degree in radian
 		 double radian = Math.toRadians(degree);
 			
 			double sin = Math.sin(radian);
@@ -273,14 +283,14 @@ public class Util1 {
 	 }
 //********************************************************************************************
 	 
-	 public static void Temp(double T) {
-		 System.out.println("1] celcius to fahrenheit  \n  2] fahrenheit to celcius");
-		 System.out.println("Enter choice: ");
-			int n = sc.nextInt();
+	 public static void Temp(double T, int n) {
+		 
 			if(n == 1) {
+				//Convert the temperature in celcius to fahrenhait
 				double fahrenheit = (T * (9/2))+32;
 				System.out.println("Temperature in celcius to fahrenheit = " + fahrenheit);
 			}else if(n == 2) {
+				//Convert the temperature in fahrenhait to celcius
 				double celcius = (T - 32) * 5/9;
 				System.out.println("Temperature in fahrenheit to celcius = " + celcius);
 			}
@@ -302,10 +312,11 @@ public class Util1 {
 	 
 	 public static int binswap(int num)
 	  {
-		
+		      //Convert decimal number in binary number
 				System.out.println("Decimal Number:"+num);
 				String bin=Integer.toBinaryString(num);
 				System.out.println("Binary Number after conversion:"+bin);
+				//Take a length of binary number
 				int n=bin.length();
 				String  s1 = "0";
 				if(n<8) 
@@ -317,6 +328,7 @@ public class Util1 {
 						System.out.println("Nibble 1:"+nibble1);
 						String nibble2=bin.substring(4,8);
 						System.out.println("Nibble 2:"+nibble2);
+						//Swapping the nibble
 						String swappNibble=nibble2.concat(nibble1);
 						System.out.println("After swapping nibbles:"+swappNibble);
 						int dec=Integer.parseInt(swappNibble,2);
@@ -326,7 +338,7 @@ public class Util1 {
 					
 	  }
 	 public static void PowerOfTwo(int result) {
-		
+		//Find resultant number is power of two or not
 		 boolean status;
 		if(result % 2 == 1) {
 			 status = false;
@@ -361,14 +373,17 @@ public class Util1 {
 	 
 	 public static double sinx(double x, int n) {
 		// convert x to an angle between -2 PI and 2 PI
-	         x = x * (Math.PI/180);
+	         x = x * (Math.PI /180);
            System.out.println("x = " + x);
 	        // compute the Taylor series approximation
-	        double term = 1.0;      // ith term = x^i / i!
-	        double sum  = 0.0;      // sum of first i terms in taylor series
+           // ith term = x^i / i!
+	        double term = 1.0;  
+	     // sum of first i terms in taylor series
+	        double sum  = 0.0;      
             
 	        for (int i = 1; i <= n; i++) {
-	        	if(term != 0) {
+	        	if(term != 0.0) {
+	        		// Find odd number
 	        		if(i % 2 == 1) {
 	        	  double numerator = Math.pow(x, i);
 	        	  System.out.println("Numerator: " + numerator);
@@ -376,6 +391,7 @@ public class Util1 {
 	        	  System.out.println("Denominator: " + denominator);
 	              term = term * (numerator / denominator);
 	        		}
+	        	//Sign operator for odd number	
 	              if (i % 4 == 1) 
 	               	sum = sum + term;
 	              if (i % 4 == 3) 
@@ -393,11 +409,14 @@ public class Util1 {
          x1 = x1 * (Math.PI/180);
        System.out.println("x1 = " + x1);
         // compute the Taylor series approximation
-        double term = 1.0;      // ith term = x^i / i!
-        double sum  = 0.0;      // sum of first i terms in taylor series
+        // ith term = x^i / i!
+        double term = 1.0; 
+        // sum of first i terms in taylor series
+        double sum  = 0.0;     
         
-        for (int i = 0; i <= m; i++) {
-        	if(term != 0) {
+        for (int i = 1; i <= m; i++) {
+        	if(term != 0.0) {
+        		// Find even number
         		if(i % 2 == 0) {
         	  double numerator = Math.pow(x1, i);
         	  System.out.println("Numerator: " + numerator);
@@ -405,6 +424,7 @@ public class Util1 {
         	  System.out.println("Denominator: " + denominator);
               term = term * (numerator / denominator);
         		}
+        	// Sign operator for even number	
               if (i % 4 == 0) 
                	sum = sum + term;
               if (i % 4 == 2) 
@@ -473,12 +493,16 @@ public class Util1 {
 //*********************************************************************************************
 	 
 	 public static int Largest(int n, int array[]) {
+		 //Print second largest number 
+		 // Initialize the largest and second largest number to 0 position in array
 		 int largest = array[0];
 			int secondLargest = array[0];
 			for(int i = 0; i < n; i++) {
+				//Find the largest number in array[i]
 				if(array[i] > largest) {
 					secondLargest = largest;
 					largest = array[i];
+					//Find the second largest number in array[i]
 				}else if(array[i] > secondLargest) {
 					secondLargest = array[i];
 					
@@ -486,16 +510,21 @@ public class Util1 {
 			}
 			return secondLargest;
 	 }
+	
 	 public static int Smallest(int n, int array[]) {
-			
+		 //Print second smallest number
+		 // Initialize the smallest second smallest number
 			int smallest = 0;
 			int secondSmallest = 0;
 			for(int i = 0; i < n; i++) {
+				//Compairing ith element with smallest number
 				if(array[i] == smallest) {
 					secondSmallest = smallest;
+					//Find the smallest number in array[i]
 				}else if(array[i] < smallest) {
 					secondSmallest = smallest;
 					smallest = array[i];
+					//Find the second smallest number in array[i]
 				}else if(array[i] < secondSmallest){
 					secondSmallest = array[i];
 					
@@ -505,6 +534,47 @@ public class Util1 {
 			return secondSmallest;
 	 }	
 //********************************************************************************************
-	 
-	 
+	 public static void showLines(String fileName, int startLine, int endLine) 
+		{
+			String line = null;
+			int currentLineNo = 1;
+
+			try {
+					BufferedReader in = new BufferedReader (new FileReader(fileName));				
+					//read to startLine
+					while(currentLineNo<startLine) 
+					{
+						if (in.readLine()==null)
+						{
+							throw new IOException("File too small");
+						}
+						currentLineNo++;
+					}		
+					//read until endLine
+					while(currentLineNo<=endLine) 
+					{
+						line = in.readLine();
+						if (line==null) 
+						{
+							return;
+						}
+						//System.out.println(line);
+						String str = line;
+						
+						String newstr = str.replaceAll("0", " ");
+						
+						String newstr1 = newstr.replaceAll("1", "*");
+						System.out.println(newstr1);
+						currentLineNo++;
+						
+					}
+					
+//					String str = line;
+//					System.out.println(str);
+				} 
+				catch (IOException ex) 
+				{
+					System.out.println("Problem reading file.\n" + ex.getMessage());
+				} 
+		}
 }

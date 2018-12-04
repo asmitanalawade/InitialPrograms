@@ -1,0 +1,43 @@
+package com.bridgelabz.typeOfData;
+
+import java.io.*;
+
+import javax.xml.stream.events.Namespace;
+
+import utility.Util1;
+
+public class KDWPattern {
+	
+	
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		System.out.println("Enter the string");
+		String name = Util1.inputString();
+		String[] word = null;
+		for(int i = 0; i < name.length(); i++) {
+			word = name.split("\\s+");
+			
+		}
+		for(int i = 0; i < word.length; i++) {
+			
+			if(word[i].charAt(0) == 'K') {
+				
+				Util1.kptrn("/home/bridgelabz/Desktop/Programs/JavaPrograms/src/com/bridgelabz/typeOfData/KDWPattern.txt",name,1,9);
+				
+			}else if(word[i].charAt(0) == 'D'){
+			
+				Util1.kptrn("/home/bridgelabz/Desktop/Programs/JavaPrograms/src/com/bridgelabz/typeOfData/KDWPattern.txt",name,11,19);
+		    
+			}else if(word[i].charAt(0) == 'W') {
+				
+				Util1.kptrn("/home/bridgelabz/Desktop/Programs/JavaPrograms/src/com/bridgelabz/typeOfData/KDWPattern.txt",name,21,29);
+			}
+		}
+		
+		
+		
+		
+	}
+	
+
+}

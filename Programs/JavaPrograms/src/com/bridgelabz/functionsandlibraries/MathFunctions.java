@@ -40,6 +40,7 @@ public class MathFunctions {
 		}
 		
 		System.out.println("Binary number is: ");
+		//Print binary number in reverse
 		for(j = i -1; j > 0; j--) {
 			System.out.print(bin_num[j]);
 		}
@@ -123,6 +124,7 @@ public class MathFunctions {
 		for(int i = 0; i < n; i++) {
 			boolean status = true;
 			for(int j= 2; j < i; j++) {
+				//Check the condition for prime number
 				while(i % j == 0) {
 				  status = false;
 				  break;
@@ -195,5 +197,19 @@ public class MathFunctions {
 	}
 //*********************************************************************************************
 	public static void maxMinValue(int n, int[] array, int maxValue, int minValue) {
+		
+		for(int i = 0 ; i < n; i++) {
+			array[i] = MathFunctions.inputInt();
+		}
+		for(int i = 0; i < n; i++) {
+			if(array[i] > n) 
+				maxValue = array[i];
+			else if(array[i] < n)
+				minValue = array[i];
+				
+		}
+		System.out.println("Maximum value is = " + maxValue);
+		System.out.println("Minimum value is = " + minValue);
+	}
 	
 }

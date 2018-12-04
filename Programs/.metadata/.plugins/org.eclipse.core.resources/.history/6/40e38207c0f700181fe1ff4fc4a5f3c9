@@ -1,0 +1,25 @@
+package com.bridgelabz.searchFunction;
+
+import java.io.*;
+
+public class BinarySearchWord {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		String file = "/home/bridgelabz/Desktop/Programs/JavaPrograms/src/com/bridgelabz/searchFunction/File.txt";
+		File fileName = new File(file);
+		int n = file.length();
+		System.out.println( n);
+		BufferedReader br = new BufferedReader(new FileReader(fileName));
+		String line;
+		while((line = br.readLine()) != null){
+		     //process the line
+		     System.out.println(line);
+		}
+		
+		
+	}
+	
+	
+
+}

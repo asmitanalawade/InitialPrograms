@@ -1,0 +1,35 @@
+package com.bridgelabz.typeOfData;
+
+import java.io.*;
+
+public class KDWPattern {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		kptrn("/home/bridgelabz/Desktop/Programs/JavaPrograms/src/com/bridgelabz/typeOfData/KDWPattern.txt"1,9);
+		
+		
+		
+	}
+	public static void kptrn(String pattern ) throws IOException
+	{
+		File file = new File(pattern);
+		BufferedReader br = new BufferedReader(new FileReader(file));
+		String line = null;
+		int currentLine = 1;
+		int endLine = 9;
+		if(currentLine < endLine)
+		{
+			while((line = br.readLine()) != null)
+			{
+			     //process the line
+			     System.out.println("Line too short");
+			}   
+		}
+			currentLine++;
+		
+		    
+		
+	}
+
+}

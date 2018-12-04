@@ -1,0 +1,31 @@
+package com.bridgelabz.typeOfData;
+
+import java.io.*;
+
+public class KDWPattern {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		String pattern = "/home/bridgelabz/Desktop/Programs/JavaPrograms/src/com/bridgelabz/typeOfData/KDWPattern.txt"1,9;
+		File file = new File(pattern);
+		
+		FileReader fr = new FileReader(file);
+		
+		//br.close();
+		
+	
+	}
+	public static void kptrn(String pattern, FileReader fr) throws IOException
+	{
+		BufferedReader br = new BufferedReader(fr);
+		String line;
+		
+		while((line = br.readLine()) != null){
+		     //process the line
+		     System.out.println(line);
+		     int first value = 1;
+		     int end value = 9;
+		}
+	}
+
+}

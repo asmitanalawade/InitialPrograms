@@ -1,0 +1,25 @@
+package com.bridgelabz.typeOfData;
+
+import java.io.*;
+
+public class KDWPattern {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		String pattern = "/home/bridgelabz/Desktop/Programs/JavaPrograms/src/com/bridgelabz/typeOfData/KDWPattern.txt";
+		File file = new File(pattern);
+		
+		FileReader fr = new FileReader(file);
+		BufferedReader br = new BufferedReader(fr);
+		String line;
+		
+		while((line = br.readLine()) != null){
+		     //process the line
+		     System.out.println(line);
+		}
+		//br.close();
+		
+		
+	}
+
+}

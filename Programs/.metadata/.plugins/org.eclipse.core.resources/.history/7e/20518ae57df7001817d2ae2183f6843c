@@ -1,0 +1,20 @@
+package com.bridgelabz.searchFunction;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class BinarySearchWord {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		String fileName = "JavaPrograms/src/com/bridgelabz/searchFunction/file.txt";
+		File file = new File(fileName);
+		FileReader fr = new FileReader(file);
+		BufferedReader br = new BufferedReader(fr);
+		
+
+	}
+
+}

@@ -21,18 +21,8 @@ public class MinAndMaxValue {
 		int maxValue = 0;
 		int minValue = 0;
 		System.out.println("Enter the elements of the array");
-		for(int i = 0 ; i < n; i++) {
-			array[i] = MathFunctions.inputInt();
-		}
-		for(int i = 0; i < n; i++) {
-			if(array[i] > n) 
-				maxValue = array[i];
-			else if(array[i] < n)
-				minValue = array[i];
-				
-		}
-		System.out.println("Maximum value is = " + maxValue);
-		System.out.println("Minimum value is = " + minValue);
+		
+		MathFunctions.maxMinValue(n, array, maxValue, minValue);
 
 	}
 

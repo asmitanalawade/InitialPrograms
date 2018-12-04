@@ -51,9 +51,9 @@ public class MathOperations {
 		     System.out.println("Enter the value of x");
 		     double x = Util1.inputDouble();
 		
-            double result1 = Util1.sinx(x, n1);
-            System.out.println(result1);
-            break;
+             double result1 = Util1.sinx(x, n1);
+             System.out.println(result1);
+             break;
             
 		case 4 :
 			System.out.println("Enter the number of series for cosx");
@@ -61,9 +61,9 @@ public class MathOperations {
 		     System.out.println("Enter the value of x");
 		     double x1 = Util1.inputDouble();
 		
-            double result2 = Util1.cosx(x1, m);
-            System.out.println(result2);
-            break; 
+             double result2 = Util1.cosx(x1, m);
+             System.out.println(result2);
+             break; 
 		}
 	}
 	
